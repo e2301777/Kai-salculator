@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai'salculator</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="autofill.css">
+    <link rel="stylesheet" href="tooltip.css">
+</head>
+<body>
+    <header id="title">
+    <h1>Kai'salculator</h1>
+        <h3>Daughter of the Void</h3>
+    </header>
+    <div id="main">
+    <div id="leftFiller"></div>
+    <div id="center">
+        <!-------------------LEFT MAIN AREA------------------->
+        <div id="cLeft">
+            <div id="lvlSelector">
+                <h4>Champion lvl:</h4>
+                <input type="text" id="champlvl"><br>
+                <input type="range" min="1" max="18" value="1" class="slider" id="lvlRange"><br>
+                <input type="button" id="callChamps" value="Fetch info"><br>
+            </div> 
+            <div id="items">
+                <h4>Search for items:</h4>
+                <form id="itemForm" class="autocomplete" autocomplete="off">
+                    <input type="text" id="itemSearch" placeholder="Type item name here">
+                    <input type="button" id="callItems" value="Show item"><br>
+                </form>
+                    <p id="itemInfo">Info here</p>
+            </div>
+        </div>
+        <!-------------------MIDDLE MAIN AREA------------------->
+        <div id="cMid">
+            <div id="build">
+                <p id="crntBuild">current build</p>
+            </div>
+        </div>
+        <!-------------------RIGHT MAIN AREA------------------->
+        <div id="cRight">
+            <div id="stats">
+                <table>
+                    <tr id="adRow"><td>Bonus AD:</td><td id="crntAd" class="tooltip"></td></tr>
+                    <tr id="apRow"><td>Bonus AP:</td><td id="crntAp" class="tooltip"></td></tr>
+                    <tr id="asRow"><td>Bonus AS:</td><td id="crntAs" class="tooltip"></td></tr>
+                </table>
+            </div>
+        </div>
+    </div> 
+    <div id="rightFiller"></div>
+    </div>
+
+
+
+    <footer id="footer"></footer>
+
+    <script src="main.js"></script>
+    <script src="calculations.js"></script>
+    <script src="fetch_show.js"></script>
+    <script src="format.js"></script>
+
+    <script src="autofill.js"></script>
+</body>
+</html>

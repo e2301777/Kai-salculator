@@ -1,0 +1,192 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+    background: url("kaisabg.PNG");
+    background-repeat: no-repeat;
+    background-size: cover; /*background image covers the entire page */
+    background-position: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex: 0.8;
+    justify-content: flex-end;
+    align-items: center;
+    text-shadow: 2px 2px 2px #4c0263;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+}
+
+input{
+    background-color: #f9f1fc;
+    border-style: ridge;
+    border-color: #4c0263;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#main{
+    display: flex;
+    flex: 1.5;
+    width: 100%;
+    min-height: 100%;
+}
+
+#center {
+    display: flex;
+    justify-content: space-between; /* Adjust space between child elements */
+    align-items: center; /* Align items to the top */
+    width: 100%; /* Ensure the parent takes up the full width */
+    min-height: 100%;
+    background-color: #3b0063;
+    border-style: ridge;
+    border-color: #4c0263;
+    border-radius: 20px;
+    opacity: 0.9;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+}
+
+
+#cLeft, #cMid, #cRight {
+    flex: 1; /* Distribute space equally */
+    padding: 10px; /* Optional: add padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+/* Optionally adjust widths if you don't want equal width */
+#cLeft {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    min-height: 100%;
+    justify-content: center; /* Make left section wider */
+}
+
+#cMid {
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    min-height: 100%;
+    justify-content: center; /* Make middle section the widest */
+}
+
+#cRight {
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    min-height: 100%;
+    justify-content: center; /* Slightly narrower right section */
+}
+
+#leftFiller, #rightFiller{
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    min-height: 100%;
+    min-width: 15%;
+}
+
+#stats{
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    max-width: 100%;
+    min-height: 10%;
+    background-color: #411254;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: #3a104a;
+}
+
+#build{
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 100%;
+    min-height: 10%;
+    background-color: #411254;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: #4c0263;
+}
+
+#items{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    min-height: 10%;
+}
+
+
+
+#itemInfo{
+    margin: 10px;
+    padding: 10px;
+    background-color: #411254;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: #4c0263;
+}
+
+#lvlSelector{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 100%;
+    min-height: 10%;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: space-between; /* Adjust space between child elements */
+    align-items: center; /* Align items to the top */
+    width: 100%; /* Ensure the parent takes up the full width */
+    height: 20%;
+}
+
+#callChamps{
+    display: none;
+}
+
+#callItems:hover, #addToBuild:hover{
+    cursor: pointer;
+    background-color: #d8abe9;
+}
+
+#lvlRange:hover{
+    cursor: pointer;
+}
+
+#itemSearch{
+    width: 60%;
+}
+
+#callItems{
+    width: 30%
+}
