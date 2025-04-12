@@ -2,14 +2,14 @@
 //---------Fetch data------------
 
 async function championInfo(){
-    const response = await fetch("https://ddragon.leagueoflegends.com/cdn/14.16.1/data/en_US/champion.json");
+    const response = await fetch("https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/champion.json");
     const data = await response.json();
     championData = data;
     return data;
 }
 
 async function itemInfo(){
-    const response = await fetch("https://ddragon.leagueoflegends.com/cdn/14.16.1/data/en_US/item.json");
+    const response = await fetch("https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/item.json");
     const data = await response.json();
     itemData = data;
 
